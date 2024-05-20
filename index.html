@@ -87,7 +87,7 @@
           <details class="info-bubble question">
             <summary class="bubble-header question">Q: Do I need to know C, or any other languages before I learn C++?</summary>
             <div class="content"><p>Nope! It’s perfectly fine to start learning computer programming with C++!</p>
-              <p>It's even taught as a first language in some college classes.<br/>That being said...While it's not impossible to learn C++ as a first language, it will be a tough journey without some quidance or proper resources.</p>
+              <p>It's even taught as a first language in some college classes.<br/>That being said...While it's not impossible to learn C++ as a first language, it will be a tough journey without some guidance or proper resources.</p>
               <p>Once you know C++, it should be pretty easy to learn standard C if you ever have the need. These days, C is mostly used for niche use cases: code that runs on embedded devices, when you need to interact with other languages that can only interface with C, etc… For most other cases, C++ is recommended.
             </div>
           </details>
@@ -95,19 +95,21 @@
 
         <section id="'Hello,_World!'_in_C++" class="main-section hello-world-section">
           <header class="section-header">'Hello, World!' in C++</header>
-          <p class= "indented-text">Traditionally, the first program programmers write in a new language is the infamous hello world program. Type/copy the following into your IDE:</p>
+          <p class= "indented-text">Traditionally, the first program programmers write in a new language is the infamous hello world program. After setting up your IDE for C++ (per this tutorial on <a class="cpp-link" href="https://www.learncpp.com/cpp-tutorial/installing-an-integrated-development-environment-ide/" target="_blank">learncpp.com</a>), Type/copy the following into it:</p>
           <pre class="code-block"><code >
 1. #include &lt;iostream&gt;
 2.
-3.  function helloWorld() {
-4.      console.log("Hello, world!");
-5.  }
+3.  int main() 
+4.  {
+5.      std::cout << "Hello world!";
+7.
+8.      return 0;
+9.  }
           </code></pre>
           <p class= "indented-text">To compile your program, either press F7 (if this doesn’t work, try Ctrl-Shift-B) or go to the Build menu > Build Solution. If all goes well, you should see the following appear in the Output window:</p>
                     <pre class="code-block"><code >
 1>------ Build started: Project: HelloWorld, Configuration: Debug Win32 ------
-1>HelloWorld.cpp
-1>HelloWorld.vcxproj -> c:\users\alex\documents\visual studio 2017\Projects\HelloWorld\Debug\HelloWorld.exe
+//Program related stuff here...
 ========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
           </code></pre>
           <p class= "indented-text">This means your compile was successful!</p>
@@ -122,7 +124,7 @@
         <section id="Conclusion" class="main-section conclusion-section">
           <header class="section-header">Conclusion</header>
           <p class="indented-text">Congratulations, you’ve navigated through the foundational aspects of C++! From understanding its history and philosophy to writing your first "Hello, World!" program, you've taken significant steps in your journey as a programmer.</p>
-          <p class="indented-text">Remember, learning C++ is an ongoing process, and there's always more to explore and master. If you're eager to delve deeper into the intricacies of C++ programming, consider exploring further resources and tutorials. For comprehensive and detailed learning, I highly recommend visiting <a class="cpp-link" href="https://www.learncpp.com/" target="_blank"><i>learncpp.com</i></a>, the source of much of the information presented here. Whether you're a beginner or seeking to advance your skills, <i>learncpp.com</i> offers valuable insights, exercises, and guidance to help you become proficient in C++.</p>
+          <p class="indented-text">Remember, learning C++ is an ongoing process, and there's always more to explore and master. If you're eager to delve deeper into the intricacies of C++ programming, consider exploring further resources and tutorials. For comprehensive and detailed learning, I highly recommend visiting <a class="cpp-link" href="https://www.learncpp.com/" target="_blank"><i>learncpp.com</i></a>, the source the information presented here. Whether you're a beginner or seeking to advance your skills, <i>learncpp.com</i> offers valuable insights, exercises, and guidance to help you become proficient in C++.</p>
           <p class="indented-text">Keep coding, keep exploring, and never stop learning!</p>
         </section>
 
