@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>C++ Documentation (fCC Certification Project 3)</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <nav id="navbar">
+        <header class="section-header">C++ Documentation</header>
+        <ul id="nav-list">
+          <li><a class="nav-link" href="#What_is_a_programming_language?">What is a programming language?</a></li>
+          <li><a class="nav-link" href="#Introduction_to_C++">Introduction to C++</a></li>
+          <li><a class="nav-link" href="#Before_C++,_there_was_C">Before C++, there was C</a>
+          <li><a class="nav-link" href="#Catching_up_to_modern_C++">Catching up to modern C++</a></li>
+          <li><a class="nav-link" href="#C_and_C++’s_philosophy">C and C++’s philosophy</a></li>
+          <li><a class="nav-link" href="#'Hello,_World!'_in_C++">'Hello, World!' in C++</a></li>
+          <li><a class="nav-link" href="#Conclusion">Conclusion</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section id="What_is_a_programming_language?" class="main-section intro-section">
+          <header class="section-header">What is a programming language?</header>
+              <p class= "indented-text">Programming languages are the cornerstone of software development, serving as the medium through which humans communicate instructions to computers. At its core, a programming language is a formalized set of rules and syntax that allows programmers to create algorithms, manipulate data, and build complex software systems. These languages range from low-level machine languages, which directly interface with hardware, to high-level languages like Python, Java, and JavaScript, which offer abstraction and readability.</p>
+              <p class= "indented-text">Each programming language has its unique features, paradigms, and use cases. Some prioritize performance and efficiency, while others focus on simplicity and ease of use. Regardless of the language, mastering programming involves understanding fundamental concepts such as variables, control structures, functions, and data types. Moreover, programming languages evolve over time, with new languages and updates emerging to address changing technological needs. As such, learning to program is not just about mastering a single language but also about developing problem-solving skills and adaptability to navigate the ever-evolving landscape of software development.</p>
+        </section>
+
+        <section id="Introduction_to_C++" class="main-section intro-to-cpp-section">
+          <header class="section-header">Introduction to C++</header>
+          <p class= "indented-text">C++ is a powerful, compiled programming language known for its efficiency, flexibility, and performance. As a compiled language, C++ source code is translated into machine code by a compiler before execution, resulting in fast and optimized executable programs. Its syntax, derived from the C language, emphasizes control and allows for close interaction with system hardware, making it suitable for systems programming, embedded development, and performance-critical applications. Additionally, C++ supports various programming paradigms, including procedural, object-oriented, and generic programming, offering developers a wide range of tools and approaches for solving problems. Its rich standard library provides ready-to-use functions and data structures, further enhancing productivity and code reusability. Overall, C++ remains a popular choice for building software across diverse domains due to its balance of performance, portability, and expressive power.</p>
+        </section>
+
+        <section id="Before_C++,_there_was_C" class="main-section c-history-section">
+          <header class="section-header">Before C++, there was C</header>
+          <p class="indented-text info-text">The <code class="cpp-inline">C</code> language was developed in <b>1972</b> by <a class="cpp-link" href="https://en.wikipedia.org/wiki/Dennis_Ritchie"target="_blank">Dennis Ritchie</a> at <a class="cpp-link" href="https://en.wikipedia.org/wiki/Bell_Labs"target="_blank">Bell Telephone laboratories</a>, primarily as a systems programming language (a language to write operating systems with). Ritchie’s primary goals were to produce a minimalistic language that was easy to compile, allowed efficient access to memory, produced efficient code, and was self-contained (not reliant on other programs). For a high-level language, it was designed to give the programmer a lot of control, while still encouraging platform (hardware and operating system) independence (that is, the code didn’t have to be rewritten for each platform).</p>
+            <ul id="c-timeline">
+              <li class="timeline-item">
+                <p class="year-header">1973</p>
+                <p class="indented-text">C ended up being so efficient and flexible, Ritchie and Ken Thompson rewrote most of the Unix operating system using C. Many previous operating systems had been written in assembly. Unlike assembly, which produces programs that can only run on specific CPUs, C has excellent portability, allowing Unix to be easily recompiled on many different types of computers and speeding its adoption. C and Unix had their fortunes tied together, and C’s popularity was in part tied to the success of Unix as an operating system.</p>
+              </li>
+              <li class="timeline-item">
+                <p class="year-header">1978</p>
+                <p class="indented-text">Brian Kernighan and Dennis Ritchie published a book called “The C Programming Language”. This book, which was commonly known as K&R (after the authors’ last names), provided an informal specification for the language and became a de facto standard. When maximum portability was needed, programmers would stick to the recommendations in K&R, because most compilers at the time were implemented to K&R standards.</p>
+              </li>
+              <li class="timeline-item">
+                <p class="year-header">1983</p>
+                <p class="indented-text">The American National Standards Institute (ANSI) formed a committee to establish a formal standard for C. In 1989 (committees take forever to do anything), they finished, and released the <code class="cpp-inline">C89</code> standard, more commonly known as <code class="cpp-inline">ANSI C</code>. In 1990 the International Organization for Standardization (ISO) adopted ANSI C (with a few minor modifications). This version of C became known as <code class="cpp-inline">C90</code>. Compilers eventually became ANSI C/C90 compliant, and programs desiring maximum portability were coded to this standard.</p>
+              </li>
+              <li class="timeline-item">
+                <p class="year-header">1999</p>
+                <p class="indented-text">The ISO committee released a new version of C called <code class="cpp-theme">C99</code>. C99 adopted many features which had already made their way into compilers as extensions, or had been implemented in C++.</p>
+              </li>
+            </ul>
+        </section>
+
+        <section id="Catching_up_to_modern_C++" class="main-section c++-section">
+          <header class="section-header">Catching up to modern C++</header>
+          <p class= "indented-text info-text">C++ (pronounced “see plus plus”) was developed by <a class="cpp-link" href="https://en.wikipedia.org/wiki/Bjarne_Stroustrup"target="_blank">Bjarne Stroustrup</a> at Bell Labs as an extension to C, starting in 1979. C++ adds many new features to the C language, and is perhaps best thought of as a superset of C, though this is not strictly true (as C99 introduced a few features that do not exist in C++). C++’s claim to fame results primarily from the fact that it is an object-oriented language. As for what an “object” is and how it differs from traditional programming methods, well, we’ll cover that in later chapters.</p>
+          <p class= "indented-text info-text">C++ was standardized in 1998 by the ISO committee (this means the ISO standards committee approved a document describing the C++ language, to help ensure all compilers adhere to the same set of standards). A minor update to the language was released in 2003 (called <code class="cpp-theme">C++03</code>).</p>
+          <p class= "indented-text info-text"><i>Five major updates</i> to the C++ language(<code class="cpp-inline">C++11</code>, <code class="cpp-inline">C++14</code>, <code class="cpp-inline">C++17</code>, <code class="cpp-inline"> C++20</code>, and <code class="cpp-inline">C++23</code>) have been made since then, each adding additional functionality. C++11 in particular added a huge number of new capabilities, and is widely considered to be the new baseline version of the language. Future upgrades to the language are expected every three or so years.</p>
+          <p class= "indented-text info-text">Each new formal release of the language is called a <b>language standard</b> (or <b>language specification</b>). Standards are named after the year they are released in. For example, there is no <code class="cpp-inline">C++15</code>, because there was no new standard in 2015.</p>
+        </section>
+      
+        <section id="C_and_C++’s_philosophy" class="main-section philosophy-section">
+          <header class="section-header">C and C++’s philosophy</header>
+          <p class= "indented-text">The underlying design philosophy of C and C++ can be summed up as “trust the programmer” -- which is both wonderful and dangerous. C++ is designed to allow the programmer a high degree of freedom to do what they want. However, this also means the language often won’t stop you from doing things that don’t make sense, because it will assume you’re doing so for some reason it doesn’t understand. There are quite a few pitfalls that new programmers are likely to fall into if caught unaware. This is one of the primary reasons why knowing what you shouldn’t do in C/C++ is almost as important as knowing what you should do.</p>
+          
+          <details class="info-bubble question">
+            <summary class="bubble-header question">Q: What is C++ good at, and why?</summary>
+            <div class="content">
+              <p>C++ excels in situations where high performance and precise control over memory and other resources is needed.<br/> Here are a few common types of applications that most likely would be written in C++:</p>
+              <ul>
+                <li>Video games</li>
+                <li>Real-time systems (e.g. for transportation, manufacturing, etc…)</li>
+                <li>High-performance financial applications (e.g. high frequency trading)</li>
+                <li>Graphical applications and simulations</li>
+                <li>Productivity / office applications</li>
+                <li>Embedded software</li>
+                <li>Audio and video processing</li>
+                <li>Artificial intelligence and neural networks</li>
+              </ul>
+            </div>
+          </details>
+        
+          <details class="info-bubble question">
+            <summary class="bubble-header question">Q: Do I need to know C, or any other languages before I learn C++?</summary>
+            <div class="content"><p>Nope! It’s perfectly fine to start learning computer programming with C++!</p>
+              <p>It's even taught as a first language in some college classes.<br/>That being said...While it's not impossible to learn C++ as a first language, it will be a tough journey without some quidance or proper resources.</p>
+              <p>Once you know C++, it should be pretty easy to learn standard C if you ever have the need. These days, C is mostly used for niche use cases: code that runs on embedded devices, when you need to interact with other languages that can only interface with C, etc… For most other cases, C++ is recommended.
+            </div>
+          </details>
+        </section>
+
+        <section id="'Hello,_World!'_in_C++" class="main-section hello-world-section">
+          <header class="section-header">'Hello, World!' in C++</header>
+          <p class= "indented-text">Traditionally, the first program programmers write in a new language is the infamous hello world program. Type/copy the following into your IDE:</p>
+          <pre class="code-block"><code >
+1. #include &lt;iostream&gt;
+2.
+3.  function helloWorld() {
+4.      console.log("Hello, world!");
+5.  }
+          </code></pre>
+          <p class= "indented-text">To compile your program, either press F7 (if this doesn’t work, try Ctrl-Shift-B) or go to the Build menu > Build Solution. If all goes well, you should see the following appear in the Output window:</p>
+                    <pre class="code-block"><code >
+1>------ Build started: Project: HelloWorld, Configuration: Debug Win32 ------
+1>HelloWorld.cpp
+1>HelloWorld.vcxproj -> c:\users\alex\documents\visual studio 2017\Projects\HelloWorld\Debug\HelloWorld.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========
+          </code></pre>
+          <p class= "indented-text">This means your compile was successful!</p>
+          <details class="info-bubble question">
+            <summary class="bubble-header question">Q: I got error C1010 ("fatal error C1010: unexpected end of file while looking for precompiled header. Did you forget to add ‘#include "stdafx.h"’ to your source?"). What now?</summary>
+            <div class="content"><p>You forgot to turn off precompiled headers when you created your project.<br/> Recreate your project and make sure to disable precompiled headers.</p></div>
+          </details>
+          <p class= "indented-text">To run your compiled program, press Ctrl-F5, or go to the Debug menu and choose Start Without Debugging. You will see something like the following:</p>
+          <img id="hello-world-img" src="https://www.learncpp.com/images/CppTutorial/Chapter0/VC2005-Run-min.png?ezimgfmt=rs:669x338/rscb2/ng:webp/ngcb2" alt="a cmd console displaying the text 'Hello world!'">
+        </section>
+
+        <section id="Conclusion" class="main-section conclusion-section">
+          <header class="section-header">Conclusion</header>
+          <p class="indented-text">Congratulations, you’ve navigated through the foundational aspects of C++! From understanding its history and philosophy to writing your first "Hello, World!" program, you've taken significant steps in your journey as a programmer.</p>
+          <p class="indented-text">Remember, learning C++ is an ongoing process, and there's always more to explore and master. If you're eager to delve deeper into the intricacies of C++ programming, consider exploring further resources and tutorials. For comprehensive and detailed learning, I highly recommend visiting <a class="cpp-link" href="https://www.learncpp.com/" target="_blank"><i>learncpp.com</i></a>, the source of much of the information presented here. Whether you're a beginner or seeking to advance your skills, <i>learncpp.com</i> offers valuable insights, exercises, and guidance to help you become proficient in C++.</p>
+          <p class="indented-text">Keep coding, keep exploring, and never stop learning!</p>
+        </section>
+
+        <section class="reference">
+          All information contained within this page was authored primarily by
+          <cite class="author">Alex</cite> of 
+          <a class="cpp-link" href="https://www.learncpp.com/" target="_blank"><i>learncpp.com</i></a>, with contributions from his dedicated team and readers.
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
