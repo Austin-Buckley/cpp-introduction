@@ -103,7 +103,7 @@ nav {
   top: 0;
   bottom: 0;
   position: relative;
-  padding-top: 5%;
+  padding-top: 10px;
   padding-left: 310px;
 }
 
@@ -269,16 +269,10 @@ pre {
   background-color: #0a0a0a55;
 }
 
-@media (max-width: 1024px) {
-  #navbar {
-    width: 200px;
-  }
-
 /*hello world*/
 #hello-world-img {
-  width: 50%;
-  height: 50%;
-  padding-left: 25%;
+  width: 100%;
+  height: auto;
   margin-top: 25px;
   margin-bottom: 25px;
 }
@@ -320,17 +314,12 @@ cpp-link:visited {
   color: #fff;
 }
 
-/* dev signature
-<p class="footer-signature"><b>Austin Buckley</b><br/>Kingman, AZ<br/>May 18, 2024</p>
+@media (max-width: 800px) {
+  #navbar {
+    display: none;
+  }
 
-*/
-/* info-bubble
-<section class="cpp-note question">
-  <p class="cpp-note cpp-header"></p>
-  <p></p>
-</section>
-*/
-
-/* cpp logo
-<img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/ISO_C%2B%2B_Logo.svg/800px-ISO_C%2B%2B_Logo.svg.png" alt="The C++ logo">
-*/
+  #main-doc {
+    padding-left: 0;
+  }
+}
